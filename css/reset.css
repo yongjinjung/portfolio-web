@@ -128,8 +128,9 @@ table {
   border-spacing: 0;
 }
 
+/* 추가 */
 a {
-  text-decoration: node;
+  text-decoration: none;
   color: inherit;
 }
 
