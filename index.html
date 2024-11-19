@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>짐코딩 포트폴리오</title>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/main.js" defer></script>
     <script
@@ -14,29 +15,30 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <nav>
+    <header class="header">
+      <nav class="nav container">
         <!-- 이미지(로고) -->
-        <div>
-          <img src="./images/logo.png" />
+        <div class="nav__log">
+          <img class="nav__img" src="./images/logo.png" />
+          <a href="#" class="nav__brand">짐코딩</a>
         </div>
         <!-- 메뉴 -->
-        <div>
-          <ul>
-            <li>
-              <a href="#home">Home</a>
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
             </li>
-            <li>
-              <a href="#about">About</a>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
             </li>
-            <li>
-              <a href="#skills">Skills</a>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
             </li>
-            <li>
-              <a href="#work">Work</a>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Work</a>
             </li>
-            <li>
-              <a href="#contact">Contact</a>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
             </li>
           </ul>
         </div>
@@ -222,12 +224,29 @@
               id="message"
               cols="30"
               rows="10"
+              required
+              placeholder="내용"
             ></textarea>
           </form>
         </div>
       </section>
     </main>
     <!-- Footer -->
-    <footer></footer>
+    <footer>
+      <h2>짐코딩</h2>
+      <div>
+        <a href="#" target="_blank" title="짐코딩 유튜브 링크"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+        <a href="" target="_blank" title="짐코딩 인스타그램 링크"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="" target="_blank" title="짐코딩 깃헙 링크"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+
+      <p>Copyright &copy; 2024 짐코딩 All rights reserved.</p>
+    </footer>
   </body>
 </html>

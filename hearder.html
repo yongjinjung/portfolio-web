@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        background-color: slategrey;
+      }
+
+      .header__logo {
+        font-size: 4rem;
+        font-weight: bold;
+      }
+
+      .header__nav {
+        font-size: 1.4rem;
+        font-weight: bold;
+      }
+      .hader__menu {
+        display: flex;
+        list-style: none;
+      }
+
+      .header__menu-item {
+        margin-right: 10px;
+      }
+
+      .button {
+        padding: 10px 14px;
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header__logo">로고</div>
+      <nav class="header__nav">
+        <ul class="hader__menu">
+          <li class="header__menu-item">메뉴1</li>
+          <li class="header__menu-item">메뉴2</li>
+          <li class="header__menu-item">메뉴3</li>
+          <li class="header__menu-item">메뉴4</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <article class="card">
+        <h2 class="card__title">제목</h2>
+        <div>
+          <span class="card__author">글쓴이</span>
+          <span class="card__date">작성일</span>
+        </div>
+        <p class="card__content">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+          provident aliquid, repellat nobis ipsam omnis corrupti quidem sequi.
+          Error numquam corporis modi amet quia. Dicta vel quia quidem ipsam
+          repudiandae!
+        </p>
+        <button class="button">
+          <span class="button__text">시작하기</span>
+        </button>
+      </article>
+    </main>
+  </body>
+</html>
