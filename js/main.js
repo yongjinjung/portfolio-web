@@ -1,9 +1,16 @@
-let greeting = 'hello, world!';
-console.log('greetting');
+function toggleMenu() {
+  const $navMenu = document.getElementById('nav-menu');
+  $navMenu.classList.toggle('show');
+}
 
-let nickname = '짐코딩';
-let hobby = ['헬스', '수영', '자전거'];
-let person = {
-  nickname: nickname,
-  hobby: hobby,
-};
+function init() {
+  const $navToggle = document.querySelector('#nav-toggle');
+  $navToggle.addEventListener('click', toggleMenu);
+
+  const $navLinkList = document.querySelectorAll('.nav__link');
+  $navLinkList.forEach((el) => {
+    el.addEventListener('click', toggleMenu);
+  });
+}
+
+init();
