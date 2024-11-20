@@ -307,3 +307,48 @@ body {
   border-radius: 0.5rem;
   width: 100%;
 }
+
+.work__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--spacing-1);
+}
+
+.work__link {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.work__img:hover {
+  transform: scale(1.05);
+}
+
+.work__img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.contact__container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__form {
+  width: 300px;
+}
+
+.contact__input {
+  width: 100%;
+  outline: none;
+  border: 1.5px solid var(--dark-color);
+  padding: 12px;
+  border-radius: 0.5rem;
+  margin-bottom: var(--spacing-1);
+  font-size: var(--font-size-6);
+  font-weight: var(--font-weight-bold);
+}
+
+.contact__button {
+  display: block;
+  margin-left: auto;
+}
