@@ -3,6 +3,16 @@ function toggleMenu() {
   $navMenu.classList.toggle('show');
 }
 
+function handleFloatingButton() {
+  const $floatingButton = document.getElementById('floatingButton');
+  $floatingButton.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      // behavior: 'smooth',
+    });
+  });
+}
+
 function init() {
   const $navToggle = document.querySelector('#nav-toggle');
   $navToggle.addEventListener('click', toggleMenu);
@@ -11,6 +21,8 @@ function init() {
   $navLinkList.forEach((el) => {
     el.addEventListener('click', toggleMenu);
   });
+
+  handleFloatingButton();
 }
 
 init();
