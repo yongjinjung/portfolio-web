@@ -52,6 +52,7 @@ $sectionList.forEach((el) => {
   observer.observe(el);
 });
 
+//ScrollReveal
 const scrollReveal = ScrollReveal({
   origin: 'top',
   distance: '60px',
@@ -66,6 +67,7 @@ scrollReveal.reveal('.skills__data, .work__link, .contact__input', {
   interval: 200,
 });
 
+//TypeIt
 const typeit = new TypeIt('#typeit', {
   speed: 70,
   startDelay: 1300,
@@ -79,3 +81,32 @@ typeit
   .delete(11, { delay: 400 })
   .type('<strong class="home__title-color">짐코딩</strong>입니다!')
   .go();
+
+//이메일 클라이언트 열기
+const $form = document.querySelector('#contactForm');
+// console.log($form);
+
+$form.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  // 폼 하위 정보를 갖고!
+  const name = $form.name.value;
+  const subject = $form.subject.value;
+  const message = $form.message.value;
+  const to = 'jyj1641@gmail.com';
+
+  console.log('name : ', name);
+  console.log('subject : ', subject);
+  console.log('message : ', message);
+  console.log('to : ', to);
+
+  //이메일 클라이언트 열기
+  const emailMsg = ``;
+  location.href =
+    'mailto:' +
+    encodeURIComponent(to) +
+    '?subject=' +
+    encodeURIComponent(`[${name}님의 문의] ${subject}`) +
+    '&body=' +
+    encodeURIComponent(message);
+});
