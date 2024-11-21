@@ -294,7 +294,13 @@
       <section class="contact section" id="contact">
         <h2 class="section__title">Contact</h2>
         <div class="contact__container container">
-          <form id="contact" class="contact__form" action="">
+          <form
+            id="contactForm"
+            name="contactForm"
+            class="contact__form"
+            action="/test"
+            method="post"
+          >
             <input
               class="contact__input"
               type="text"
@@ -305,7 +311,7 @@
             <input
               class="contact__input"
               type="text"
-              name="title"
+              name="subject"
               placeholder="제목"
               required
             />
